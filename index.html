@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My 23 Gym Demos</title>
+  <style>
+    body { background: #0d0d0d; color: white; font-family: Arial; text-align: center; padding: 40px; }
+    h1 { color: #00ff88; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 30px; }
+    a { background: #1a1a1a; padding: 20px; border-radius: 10px; text-decoration: none; color: white; border: 1px solid #333; display: block; }
+    a:hover { background: #00ff88; color: black; }
+  </style>
+</head>
+<body>
+  <h1>🏋 Select a Gym Website</h1>
+  <div class="grid">
+    <a href="a-plus-fitness/">A+ Fitness</a>
+    <a href="debs-gym/">Debs Gym</a>
+    <a href="downtown-athletic-club/">Downtown Athletic Club</a>
+    <a href="elite-body-fitness/">Elite Body Fitness & Nutrition</a>
+    <a href="elite-squad-gym/">Elite Squad Gym</a>
+    <a href="evolve-fitness-tampa/">Evolve Fitness Tampa</a>
+    <a href="fitness-31/">Fitness 31</a>
+    <a href="gordon-extreme-fitness/">Gordon Extreme Fitness</a>
+    <a href="healthy-harts-fitness/">Healthy Harts Fitness</a>
+    <a href="live-well-fitness/">Live Well Fitness</a>
+    <a href="martinez-gym/">Martinez Gym</a>
+    <a href="new-flex-gym/">New Flex Gym</a>
+    <a href="numa-speed-elite/">NUMA Speed Elite</a>
+    <a href="odin-fitness/">Odin Fitness</a>
+    <a href="panama-city-collective-fitness/">Panama City Collective Fitness</a>
+    <a href="rc-fitness/">RC Fitness</a>
+    <a href="retroflex-fitness/">RetroFlex Fitness</a>
+    <a href="roth-allen-fitness/">Roth Allen Fitness</a>
+    <a href="sarasota-fitness-studio/">Sarasota Fitness Studio</a>
+    <a href="sharper-edge-fitness/">Sharper Edge Fitness</a>
+    <a href="the-dam-gym/">The DAM Gym</a>
+    <a href="the-spot-fitness-studio/">The Spot Fitness Studio</a>
+    <a href="woods-family-fitness/">Wood's Family Fitness</a>
+  </div>
+</body>
+</html>); border-color: var(--accent); color: var(--ink); }
+  .hero { padding: 8vh 6vw 10vh; position: relative; }
+  .hero-eyebrow {
+    font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--accent);
+    text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 18px;
+  }
+  .hero-eyebrow::before { content: "\25CF "; }
+  .hero h1 {
+    font-family: 'Anton', sans-serif; font-size: clamp(2.8rem, 9vw, 6.5rem); line-height: 0.95;
+    letter-spacing: -0.01em; text-transform: uppercase; margin-bottom: 28px; max-width: 14ch;
+  }
+  .hero-body { max-width: 46ch; font-size: 1.05rem; line-height: 1.6; color: rgba(237,234,227,0.75); margin-bottom: 34px; }
+  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+  .btn-primary {
+    font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 0.92rem; background: var(--accent);
+    color: var(--ink); padding: 15px 28px; border-radius: 2px; text-decoration: none; display: inline-block;
+  }
+  .btn-secondary {
+    font-family: 'Archivo', sans-serif; font-weight: 700; font-size: 0.92rem; border: 1px solid var(--line);
+    color: var(--concrete); padding: 15px 28px; border-radius: 2px; text-decoration: none; display: inline-block;
+  }
+  .stat-strip {
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: rgba(255,255,255,0.02);
+    overflow: hidden; position: relative; padding: 26px 0;
+  }
+  .stat-track { display: flex; gap: 0; width: max-content; animation: ticker 28s linear infinite; }
+  .stat-track:hover { animation-play-state: paused; }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  .stat-item { display: flex; align-items: baseline; gap: 10px; padding: 0 3vw; border-right: 1px solid var(--line); white-space: nowrap; }
+  .stat-num { font-family: 'Anton', sans-serif; font-size: 2.2rem; color: var(--accent); }
+  .stat-label { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; color: rgba(237,234,227,0.6); line-height: 1.2; }
+  @media (prefers-reduced-motion: reduce) { .stat-track { animation: none; } }
+  .about { padding: 12vh 6vw; display: grid; grid-template-columns: 1fr 1.3fr; gap: 6vw; align-items: start; }
+  @media (max-width: 760px) { .about { grid-template-columns: 1fr; } }
+  .about-label { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); }
+  .about-text { font-size: clamp(1.2rem, 2.4vw, 1.6rem); line-height: 1.5; font-weight: 500; color: rgba(237,234,227,0.92); }
+  .cta-block { margin: 0 6vw 12vh; background: var(--forest); border-radius: 6px; padding: 8vh 6vw; text-align: center; }
+  .cta-block h2 { font-family: 'Anton', sans-serif; font-size: clamp(1.8rem, 5vw, 3.2rem); text-transform: uppercase; margin-bottom: 18px; line-height: 1.05; }
+  .cta-block p { color: rgba(237,234,227,0.75); margin-bottom: 30px; font-size: 1rem; }
+  footer { padding: 5vh 6vw; border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: rgba(237,234,227,0.55); }
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-name">Debs Gym</div>
+  <a href="#join" class="nav-cta">Book a free trial visit</a>
+</nav>
+
+<section class="hero">
+  <div class="hero-eyebrow">LAKELAND, FLORIDA</div>
+  <h1>TRAIN HERE.</h1>
+  <p class="hero-body">Debs Gym: House of Perfection is a 24/7, 16,000 sq ft fitness facility in Lakeland, owned by IFBB Pro Judge Debbie Callahan with over 30 years in the fitness industry.</p>
+  <div class="hero-actions">
+    <a href="#join" class="btn-primary">Book a free trial visit</a>
+    <a href="#about" class="btn-secondary">Learn more</a>
+  </div>
+</section>
+
+<div class="stat-strip">
+  <div class="stat-track">
+    <div class="stat-item"><span class="stat-num">16,000</span><span class="stat-label">SQ FT<br>FACILITY</span></div>
+    <div class="stat-item"><span class="stat-num">30+</span><span class="stat-label">YEARS<br>EXPERIENCE</span></div>
+    <div class="stat-item"><span class="stat-num">24/7</span><span class="stat-label">NO CONTRACT<br>ACCESS</span></div>
+    <div class="stat-item"><span class="stat-num">LAKELAND</span><span class="stat-label">HOME<br>BASE</span></div>
+    <div class="stat-item"><span class="stat-num">16,000</span><span class="stat-label">SQ FT<br>FACILITY</span></div>
+    <div class="stat-item"><span class="stat-num">30+</span><span class="stat-label">YEARS<br>EXPERIENCE</span></div>
+    <div class="stat-item"><span class="stat-num">24/7</span><span class="stat-label">NO CONTRACT<br>ACCESS</span></div>
+    <div class="stat-item"><span class="stat-num">LAKELAND</span><span class="stat-label">HOME<br>BASE</span></div>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="about-label">WHO WE ARE</div>
+  <div class="about-text">Debs Gym: House of Perfection is a 24/7, 16,000 sq ft fitness facility in Lakeland, owned by IFBB Pro Judge Debbie Callahan with over 30 years in the fitness industry.</div>
+</section>
+
+<section class="cta-block" id="join">
+  <h2>Ready to start?</h2>
+  <p>Reach out and we'll get you set up — no pressure, just a conversation.</p>
+  <a href="tel:8636839300" class="btn-primary">Book a free trial visit</a>
+</section>
+
+<footer>
+  <div>DEBS GYM — LAKELAND, FL</div>
+  <div>(863) 683-9300</div>
+</footer>
+
+</body>
+</html>
